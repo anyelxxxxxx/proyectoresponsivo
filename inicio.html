@@ -7,10 +7,12 @@
    <link rel="stylesheet" href="./css/si.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
    <script src="jquery.min.js"></script>
+   <script src="js.js"></script>
    <script>
     $(document).ready(function(){
         
     })
+    
    </script>
 </head>
 
@@ -19,9 +21,11 @@
     <header>
         <img id="logo" src="./IMAGENES/logo.png" >
         <h1 id="sisa">BUGATTI</h1>
-        <nav>
-            <ul class="etiquetas">
-                <img id="mostrar" src="./IMAGENES/menu-outline.svg" alt="">
+        <button class="toggle">
+            <img src="IMAGENES/menu-outline.svg" alt="">
+        </button>
+        <nav class="navbar navbar_visible">
+            <ul class="etiquetas ">
                 <li class="niveles"><a href="inicio.html">INICIO</a></li>
                 <li class="niveles"><a href="categorias.html">CATEGORIAS</a></li>
                 <li class="niveles"><a href="contacto.html">CONTACTOS</a></li>    

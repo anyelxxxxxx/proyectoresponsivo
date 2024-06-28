@@ -89,13 +89,17 @@ header {
 .etiquetas a:hover {
   color: rgb(255, 0, 0);
 }
-
-.etiquetas img{
+ img{
   width: 50px;
   background-color: #ffffff;
   border-radius: 5px;
+}
+.toggle{
+  margin:-20% 0 0 80%;
   display: none;
 }
+
+
 .colo {
   color: rgb(195, 16, 16);
   text-decoration: none;
@@ -444,7 +448,41 @@ video {
 }
 
 @media (max-width:750px) {
-  .etiquetas img{
+  .etiquetas{
+    background-color: #941818;
+    z-index: 3;
+    border-radius: 10px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+
+    top: 60px;
+    width: 100%;
+    overflow-y: auto;
+    left: 100%;
+    transition: left .3s;
+    display: flex;
+    margin: 0;
+    line-height: 70px;
+    flex-direction: column;
+    background-color: none;
+
+
+}
+
+.navbar ul li{
+    display: flex;
+    margin: 0;
+    line-height: 70px;
+    flex-direction: column;
+    background-color: none;
+}
+.toggle{
     display: block;
-  }
+
+}
+.navbar_visible{
+  left: 0;
+}
 }
